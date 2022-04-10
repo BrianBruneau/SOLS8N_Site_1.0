@@ -190,7 +190,7 @@ margin: 1rem auto 2rem;
 
 .hero .sub-headline div{
     position: relative;
-    margin-top: 13rem;
+    margin-top: 9rem;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
         animation: flicker 1.5s infinite alternate;     
 }
