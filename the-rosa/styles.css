@@ -193,7 +193,6 @@ margin: 1rem auto 2rem;
     margin-top: 13rem;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
         animation: flicker 1.5s infinite alternate;     
-    z-index: 1024;
 }
 
 .hero .headline div {
@@ -209,7 +208,7 @@ margin: 1rem auto 2rem;
         
 
 .sub-headline {
-    font-size: 6.6rem;
+    font-size: 6rem;
     font-family: var(--secondary-font);
     color: var(--secondary-font-color);
     font-weight: 100;
