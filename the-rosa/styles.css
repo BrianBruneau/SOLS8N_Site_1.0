@@ -11,7 +11,7 @@
 
 :root{
     --main-font: 'Babylonica', cursive;
-    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --secondary-font: 'Babylonica', cursive;
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
@@ -65,6 +65,11 @@ header {
     left: 0;
     z-index: 1;
     background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
+}
+
+header img {
+    height: 6rem;
+    width: 6rem;
 }
 
 .nav {
@@ -175,7 +180,7 @@ height: 22rem;
 width: 22rem;
 text-align: center;
 margin: 0 auto;
-margin-bottom: 7rem;
+margin-bottom: 1rem;
 }
 
 .hero .sub-headline div{
@@ -196,13 +201,13 @@ margin-bottom: 7rem;
         }
 
 .sub-headline {
-    font-size: 8.5rem;
+    font-size: 4.5rem;
     font-family: var(--secondary-font);
     color: var(--secondary-font-color);
     font-weight: 100;
     line-height: .6;
     margin-bottom: 2rem;
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
     /* animation: flicker 1.5s infinite alternate;      */
 
@@ -213,12 +218,12 @@ margin-bottom: 7rem;
 
 .first-letter {
     text-transform: uppercase;
-    font-size: 11.3rem;
+    font-size: 5.3rem;
 }
 
 .headline {
     color: #fff;
-    font-size: 3.7rem;
+    font-size: 2.7rem;
     font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 900;
@@ -236,8 +241,9 @@ margin-bottom: 7rem;
 
 .line {
     width: 100%;
-    max-width: 8.4rem;
+    max-width: 13.4rem;
     height: .25rem;
+    margin-bottom: 1rem;
     background-color: #fff;
     position: relative;
     opacity: 0;
