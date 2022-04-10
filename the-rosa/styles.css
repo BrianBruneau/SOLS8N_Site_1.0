@@ -72,6 +72,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 .menu-toggle {
@@ -159,7 +161,7 @@ header {
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     /* background: url("images/hero.jpg") center no-repeat; */
     background-color: black;
     background-size: cover;
@@ -177,6 +179,7 @@ margin-bottom: 7rem;
 }
 
 .hero .sub-headline div{
+    margin-top: 8rem;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
         animation: flicker 1.5s infinite alternate;     
 
@@ -193,11 +196,11 @@ margin-bottom: 7rem;
         }
 
 .sub-headline {
-    font-size: 11.5rem;
+    font-size: 8.5rem;
     font-family: var(--secondary-font);
     color: var(--secondary-font-color);
     font-weight: 100;
-    line-height: .4;
+    line-height: .6;
     margin-bottom: 2rem;
     letter-spacing: 3px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
@@ -210,7 +213,7 @@ margin-bottom: 7rem;
 
 .first-letter {
     text-transform: uppercase;
-    font-size: 13.3rem;
+    font-size: 11.3rem;
 }
 
 .headline {
