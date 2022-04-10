@@ -16,6 +16,7 @@
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
+    --angel-font-color: #ce0018; 
     --body-font-color: #515151;
 }
 
@@ -69,8 +70,12 @@ header {
 }
 
 header img {
-    height: 6.6rem;
-    width: 6.6rem;
+    height: 9.6rem;
+    width: 9.6rem;
+    margin-top: 4.4rem;
+    position: relative;
+    z-index: 123;
+
 }
 
 .nav {
@@ -180,26 +185,28 @@ header img {
 height: 22rem;
 width: 22rem;
 text-align: center;
-margin: 0 auto;
-margin-bottom: 1rem;
+margin: 1rem auto 2rem;
 }
 
 .hero .sub-headline div{
-    margin-top: 8rem;
+    position: relative;
+    margin-top: 13rem;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
         animation: flicker 1.5s infinite alternate;     
-
+    z-index: 1024;
 }
 
 .hero .headline div {
-    -webkit-box-shadow: 0 8px 6px -6px white;
-	   -moz-box-shadow: 0 8px 6px -6px white;
-	        box-shadow: 0 18px 5px -14px red;
+
+	        box-shadow: 0 27px 5px -14px red;
             width: fit-content;
             text-align: center;
-            margin: 0 auto 7px;
+            margin: 1rem auto .8rem;
             border-radius: 11px;
+            animation: flicker-red 6.6s infinite alternate;     
+
         }
+        
 
 .sub-headline {
     font-size: 6.6rem;
@@ -314,6 +321,7 @@ margin-bottom: 1rem;
     font-size: 1.1rem;
     background-color: #fff;
     padding: .9rem 1.8rem;
+    margin-top: 1rem;
     color: var(--body-font-color);
     border-radius: .4rem;
     transition: background-color .5s;
@@ -650,6 +658,24 @@ footer {
         bottom: -3px;
     }
 
+    header img {
+        position: absolute;
+        height: 16.6rem;
+        width: 16.6rem;
+        margin: 0.3rem 2rem 0 0;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero .video-wrapper {
+        height: 33rem;
+        width: 33rem;
+        text-align: center;
+        margin: 1rem auto 2rem;
+    }
+
     .sub-headline {
         font-size: 13rem;
         margin-bottom: 4rem;
@@ -810,7 +836,33 @@ footer {
         box-shadow: none;
     }    
 }
-
+@keyframes flicker-red {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem black,
+            0.2rem 0.2rem 1rem black,
+            0 0 1rem var(--angel-font-color),
+            0 0 2rem var(--angel-font-color),
+            0 0 1rem var(--angel-font-color),
+            0 0 6rem var(--angel-font-color),
+            0 0 2rem var(--angel-font-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 1rem var(--angel-font),
+            inset 0 0 1rem var(--angel-font),
+            0 0 4rem var(--body-font),
+            inset 0 0 2rem var(--angel-font);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
 
 
 
