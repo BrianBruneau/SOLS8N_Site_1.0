@@ -44,3 +44,12 @@ sr.reveal('.animate-bottom', {
     distance: '25rem',
     delay: 600
 });
+
+
+$( '.js-input' ).keyup(function() {
+    if( $(this).val() ) {
+       $(this).addClass('not-empty');
+    } else {
+       $(this).removeClass('not-empty');
+    }
+  });

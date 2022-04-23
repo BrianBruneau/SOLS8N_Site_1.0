@@ -172,7 +172,7 @@ header img {
 
 .hero {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /* background: url("images/hero.jpg") center no-repeat; */
     background-color: black;
     background-size: cover;
@@ -188,9 +188,16 @@ text-align: center;
 margin: 1rem auto 2rem;
 }
 
+.hero .art-page .video-wrapper {
+    height: 27rem;
+    width: 33rem;
+    text-align: center;
+    margin: 1rem auto 2rem;
+    }
+
 .hero .sub-headline div{
     position: relative;
-    margin-top: 9rem;
+    margin-top: 1rem;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
         animation: flicker 1.5s infinite alternate;     
 }
@@ -200,7 +207,7 @@ margin: 1rem auto 2rem;
 	        box-shadow: 0 27px 5px -14px red;
             width: fit-content;
             text-align: center;
-            margin: 1rem auto .8rem;
+            margin: 2rem auto .8rem;
             border-radius: 11px;
             animation: flicker-red 6.6s infinite alternate;     
 
@@ -223,6 +230,40 @@ margin: 1rem auto 2rem;
     animation-delay: 1.5s;
 }
 
+.art-headline {
+    margin-top: 11rem;
+    margin-bottom: 4rem;
+}
+
+
+.roadmap-headline {
+    margin-top: 11rem;
+    margin-bottom: 2rem;
+}
+
+.roadmap-headline .headline {
+    margin-bottom: 1rem;
+}
+body .hero {
+    height: 100%;
+}
+.sub-headline-contact {
+    font-size: 8rem;
+font-family: var(--secondary-font);
+color: var(--secondary-font-color);
+font-weight: 100;
+line-height: .6;
+margin-top: 12rem;
+margin-bottom: 4rem;
+letter-spacing: .2rem;
+text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+/* animation: flicker 1.5s infinite alternate;      */
+text-align: center;
+opacity: 0;
+animation: fadeUp .5s forwards; 
+animation-delay: 1.5s;
+}
+
 .first-letter {
     text-transform: uppercase;
     font-size: 5.3rem;
@@ -242,6 +283,31 @@ margin: 1rem auto 2rem;
 
 .s8n {
     font-family: var(--angel-font);
+}
+
+.video-description {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    color: var(--angel-font-color);
+    font-weight: 100;
+    line-height: .6;
+    margin-bottom: 2rem;
+    letter-spacing: .2rem;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    /* animation: flicker 1.5s infinite alternate;      */
+
+    opacity: 0;
+    animation: fadeUp .5s forwards; 
+    animation-delay: 1.5s;
+
+}
+
+.video-holder {
+    display: inline-block;
+
 }
 
 .separator {
@@ -344,6 +410,11 @@ margin: 1rem auto 2rem;
 .discover-our-story .global-headline {
     margin-top: 6.9rem;
 
+}
+
+.art-page .global-headline {
+    bottom: 20rem;
+    z-index: 10000;
 }
 
 .global-headline .asterisk {
@@ -611,6 +682,16 @@ footer {
         padding: 7.9rem
     }
 
+    
+    .float-left{
+        float: left;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+
     .menu-toggle {
         display: none;
     }
@@ -665,22 +746,130 @@ footer {
     }
 
     .hero {
-        height: 100vh;
-    }
+height: auto;    }
 
     .hero .video-wrapper {
-        height: 33rem;
-        width: 33rem;
+        height: 29.5rem;
+        width: 42rem;
         text-align: center;
         margin: 1rem auto 2rem;
+        border: #fff solid thin;
     }
+
+    .hero .art-page .video-wrapper {
+        height: 33rem;
+        width: 50rem;
+        text-align: center;
+        margin: 1rem auto 2rem;
+        border: #fff solid thin;
+    }
+
+    .hero .sub-headline div{
+        position: relative;
+        margin-top: 0.5rem;
+        text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+            animation: flicker 1.5s infinite alternate;     
+    }
+    
+    .hero .art-page .headline div {
+                display: inline-block;
+                box-shadow: 0 27px 5px -14px red;
+                width: fit-content;
+                text-align: left;
+                margin: 2rem auto .8rem;
+                border-radius: 11px;
+                animation: flicker-red 6.6s infinite alternate;     
+    
+            }
+            
+
+    .video-description {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 6rem;
+        font-family: var(--secondary-font);
+        color: var(--angel-font-color);
+        font-weight: 100;
+        line-height: .6;
+        margin-bottom: 2rem;
+        letter-spacing: .2rem;
+        text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+        /* animation: flicker 1.5s infinite alternate;      */
+    
+        opacity: 0;
+        animation: fadeUp .5s forwards; 
+        animation-delay: 1.5s;
+
+    }
+
+    .video-holder {
+        display: inline-block;
+        margin: 0 2rem 0 2rem;
+    }
+    .art-page-container {
+        height: 77rem;
+    }
+    .video-container {
+        margin-top: 15rem;
+    }
+    
 
     .sub-headline {
         font-size: 13rem;
-        margin-bottom: 4rem;
+        margin-bottom: 10rem;
 
     }
 
+    .home-sub-headline {
+        margin-top: 4rem;
+    }
+
+    .art-headline {
+        margin-top: 4.5rem;
+        margin-bottom: 10rem;
+    }
+
+    .roadmap-headline {
+        margin-top: 4.5rem;
+        margin-bottom: 10rem;
+    }
+
+    .roadmap-header-holder {
+        display: inline-block;
+        margin: 0 3rem 10rem 3rem;
+    }
+    .roadmap .headline {
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .roadmap .video-wrapper {
+        float: left;
+    }
+    
+    .sub-headline-contact {
+        font-size: 12rem;
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);
+    font-weight: 100;
+    line-height: .6;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    letter-spacing: .2rem;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    /* animation: flicker 1.5s infinite alternate;      */
+
+    opacity: 0;
+    animation: fadeUp .5s forwards; 
+    animation-delay: 1.5s;
+    }
+
+    .contact-container {
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+    }
     .first-letter {
         font-size: 15.2rem;
     }
@@ -688,6 +877,7 @@ footer {
     .headline {
         font-size: 4.7rem;
         letter-spacing: .8rem;
+        margin-bottom: 8rem;
     }
 
 
@@ -739,6 +929,7 @@ footer {
         margin-left: 14.5rem;
     }
 
+    
 }
 
 
