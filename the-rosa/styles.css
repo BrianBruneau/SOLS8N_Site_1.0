@@ -188,6 +188,12 @@ text-align: center;
 margin: 1rem auto 2rem;
 }
 
+.home .video-wrapper {
+    height: 30rem;
+    width: 42rem;
+    margin: 3rem auto 7rem;
+}
+
 .hero .art-page .video-wrapper {
     height: 27rem;
     width: 33rem;
@@ -246,6 +252,19 @@ margin: 1rem auto 2rem;
 }
 body .hero {
     height: 100%;
+}
+
+
+body .home {
+    height: 100vh;
+}
+
+.home-sub-headline {
+    margin-top: -2rem;
+}
+
+.home .headline {
+    margin: 6rem 0 2rem 0;
 }
 .sub-headline-contact {
     font-size: 8rem;
@@ -820,6 +839,7 @@ height: auto;    }
         margin-bottom: 10rem;
 
     }
+
 
     .home-sub-headline {
         margin-top: 4rem;
