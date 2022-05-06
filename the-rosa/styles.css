@@ -182,17 +182,17 @@ header img {
 }
 
 .hero .video-wrapper {
-height: 22rem;
-width: 22rem;
+height: 28rem;
+width: 28rem;
 text-align: center;
-margin: 1rem auto 2rem;
+margin: 7rem auto 2rem;
 }
-
+/* 
 .home .video-wrapper {
     height: 27rem;
     width: 33rem;
-    margin: 3rem auto 7rem;
-}
+    margin: 8rem auto 7rem;
+} */
 
 .home .headline-description {
     margin-bottom: 7rem;
@@ -715,15 +715,26 @@ footer {
     }
 
     .nav {
-        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav .logo {
+        float: left;
+        position: initial;
     }
 
     .nav-list {
+        float: left;
         position: initial;
         width: initial;
         height: initial;
-        background-color: transparent;
-        padding: 0;
+        background-color: black;
+        border: yellowgreen solid 1px;
+        opacity: 0.8;
+        padding: 6px 60px 6px 55px;
         justify-content: initial;
         flex-direction: row;
         transform: initial;
@@ -767,10 +778,10 @@ footer {
 height: auto;    }
 
     .hero .video-wrapper {
-        height: 29.5rem;
-        width: 42rem;
+        height: 40rem;
+        width: 57.2rem;
         text-align: center;
-        margin: 1rem auto 2rem;
+        margin: 12rem auto 2rem;
         border: #fff solid thin;
     }
 
